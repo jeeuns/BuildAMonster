@@ -1,14 +1,14 @@
-// Regina Kim
-// Created: 4/24/2024
+// Jim Whitehead
+// Created: 4/14/2024
 // Phaser: 3.70.0
 //
-// 1D Movement
+// BuildAMonster
 //
-// Class assignment for CMPM 120 where we explore 1D of movement
-//
+// A template for building a monster using a series of assets from
+// a sprite atlas.
 // 
-// Art assets from Kenny Assets "Scribble Platformer" set:
-// https://kenney.nl/assets/scribble-platformer
+// Art assets from Kenny Assets "Monster Builder Pack" set:
+// https://kenney.nl/assets/monster-builder-pack
 
 "use strict"
 
@@ -21,12 +21,7 @@ let config = {
     },
     width: 800,
     height: 600,
-    scene: [Movement],
-    fps: { 
-        forceSetTimeOut: true,
-        target: 30
-    }
+    scene: [Monster]
 }
-
 
 const game = new Phaser.Game(config);
